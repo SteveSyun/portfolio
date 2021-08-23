@@ -9,7 +9,7 @@
 /*Comstom properties, update these for my own design */
 :root{
     --ff-primary:'Source Sans Pro', sans-serif;
-    --ff-secondar: 'Source Code Pro', monospace;
+    --ff-secondar: 'Merriweather', serif;
     
     --fw-reg:300;
     --fw-bold:900;
@@ -175,6 +175,7 @@ header{
     
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -531,4 +532,20 @@ header{
 
 .social-list__link{
     padding: 0.5em;
+}
+
+
+/* portfolio-item-individual */
+
+.portfolio-item-individual{
+    padding:0 2em 2em;
+    max-width: :1000px;
+    margin: 0, auto;
+}
+
+.portfolio-item-individual p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
