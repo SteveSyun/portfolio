@@ -171,6 +171,17 @@ header{
     position:absolute;
     
 }
+.call-me-n{
+    color: black;
+    font-size:24px;
+    margin: 8em;
+  
+}
+
+
+
+
+
 
 /* navigation */
 .nav {
@@ -371,9 +382,10 @@ header{
 }
 
 .skill{
-    max-width:500px;
+    max-width:600px;
     margin: 0 auto;
     color:var(--clr-light);
+    font-size:20px
 
 
 
