@@ -46,7 +46,6 @@
 }
 
 /* General styles */
-
 html{
     scroll-behavior: smooth;
 }
@@ -149,6 +148,7 @@ h3{ font-size: var(--fs-h3)}
 }
 
 
+
 /* header */
 
 header{
@@ -158,10 +158,20 @@ header{
 }
 
 .logo{
-    max-width: 100px;
-    
+    max-width: 100px; 
     
 }
+
+
+/* email-me */
+
+.email-me-m{
+    color: black;
+    font-size:25px;
+    position:absolute;
+    
+}
+
 /* navigation */
 .nav {
     position: fixed;
@@ -204,13 +214,13 @@ header{
 
 
 .nav-toggle{
-    padding: 0.25;
+    padding: 0.3;
     background: transparent;
     border: 0;
     cursor:pointer;
     position: absolute;
-    right:2em;
-    top: 2em;
+    right:3em;
+    top: 3em;
     z-index: 1000;
 }
 
@@ -247,9 +257,9 @@ header{
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
+    width: 3.8em;
     height: 3px;
-    border-radius: 1em;
+    border-radius: 2em;
     transition: transform 250ms ease-in-out;
 }
 
@@ -448,15 +458,17 @@ header{
     }
 
 .portfolio{
+    
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    font-family:cursive
+    font-family:cursive;
 }
 
 @media (min-width:800px){
 
     
     .portfolio__item {
+        padding-left: 2.5em;
     /*    background: var(--clr-accent);*/
         overflow: hidden
     }
@@ -549,3 +561,39 @@ header{
     margin-right: auto;
     
 }
+
+
+/* my project */
+
+.my-projects{
+    padding-left: 1em;
+    margin: 0 auto;
+}
+
+@media (min-width:600px){
+    .section__title--project{
+        text-align: center;
+        padding:1.2em;
+    }
+    
+    .project{
+        max-width: 800px;
+        margin:auto;
+        font-family:fantasy;
+        padding: 1.5em;
+
+    }
+    
+    .my-projects{
+        grid-template-areas: 
+            "text img";
+        
+    }
+    .my-project_img{
+        box-shadow:var(--bs);
+        position:relative;
+    }
+    
+}
+
+
