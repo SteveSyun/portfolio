@@ -509,7 +509,7 @@ header{
 
     text-align: center;
     padding: 2.5em;
-    font-size: var(--fs-h3);
+    font-size: 25px;
 }
 
 .footer__link{
@@ -539,11 +539,11 @@ header{
 }
 
 .social-list__item{
-    margin: 1em;
+    margin: 2em;
 }
 
 .social-list__link{
-    padding: 0.5em;
+    padding: 1em;
 }
 
 
@@ -556,7 +556,7 @@ header{
 }
 
 .portfolio-item-individual p{
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     
