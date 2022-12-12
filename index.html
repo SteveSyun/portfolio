@@ -1,160 +1,194 @@
 <!DOCTYPE html>
 
-<html lang="eng">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="with=device-width, intitial-scale=1.0">
-    <title>Steve(Hua Wei) Sun portfolio Website</title>
-    <!-- <link rel ="stylesheet"
-              href = "https://cdnjs.cloudfalre.com/ajax/libs/normalize/7.0.0/normalize.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.5/dist/full.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-
-
-
-    <!---update fornts we need to use "go google.fronts-->
-    <!--        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <!-- linked my stylesheet-->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-
-<body>
-
-    <!-- Nav Bar -->
-    <div class="navbar mb-2 shadow-lg ">
-        <div class="flex-none px-2 mx-2">
-            <span class="text-lg font-bold">
-                Steve
-            </span>
-        </div>
-        <div class="flex-1 px-2 mx-2">
-            <div class="items-stretch hidden lg:flex">
-                <a class="btn btn-ghost btn-sm rounded-btn">
-                    Home
-                </a>
-                <a class="btn btn-ghost btn-sm rounded-btn">
-                    Portfolio
-                </a>
-                <a class="btn btn-ghost btn-sm rounded-btn">
-                    About
-                </a>
-                <a class="btn btn-ghost btn-sm rounded-btn">
-                    Contact
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name= "viewport" content="with=device-width, intitial-scale=1.0">
+        <title>Steve(Hua Wei) Sun portfolio Website</title>
+        <link rel ="stylesheet"
+              href = "https://cdnjs.cloudfalre.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        
+        <!---update fornts we need to use "go google.fronts-->
+<!--        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <!-- linked my stylesheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    
+    <body>
+        <header>
+            <div class= "logo">
+                <div clss="email-me">
+                <a href="mailto:sunhuawei1993@gmail.com" class="email-me-m"><i class="fas fa-envelope"> Email Me</i></a>
+                </div>
+                <div class ="call-me">
+                     <a href="tel:1-210-718-7839" class="call-me-n"><i class="fas fa-phone"> 210-718-7839</i></a>
+                </div>
+               
+            </div>
+            <button class="nav-toggle" aria-label = "toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">                         <! this is navagations>
+                <ul class="nav__list">                <! this is list is sub component of my navagatio "list>
+                
+                    <li class ="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class ="nav__item"><a href="#skills" class="nav__link">My skills</a></li>
+                    <li class ="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class ="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+                    <li class ="nav__item"><a href="#work" class="nav__link">Working Experience</a></li>
+                    <li class ="nav__item"><a href="#projects" class="nav__link">My Project</a></li>
+                </ul>          
+            </nav>
+                
+                
+        </header>
+        
+    <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Steve(HuaWei) Sun</strong>
+            </h1>
+            <p class= "section__subtitle section__subtitle--intro">Software Engineer/Data Scientist</p>
+            <img src="img/IMG_2523.JPG" alt="a picture of Steve Sun" class="intro__img">
+        </section>
+    <!---My Education---->
+        <section class="my-education" id="educations">
+            <h3>Graduated from UTSA (Dec 2020)</h3>
+            <h4>Major : Computer Science</h4>
+            <h4>Degree Type: Bachelor in science</h4>
+        </section>
+    <!---Cover-Letter-->
+    <!----My Skills--->
+        <section class = "my-skills" id="skills">
+            <h2 class="section__title section__title--skills">What I can do</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Programming Language</h3>
+                    <P>Java(procient), C(procient), Python(procient), HTML(procient)</P>
+                    <p>JavaScrip(familiar), Lisp(familiar), C++(familiar), Perl(familar)</p>
+                    <p> PHP, Git</p>
+                        
+                </div>
+                <div class="skill">
+                    <h3>Gereral Skills</h3>
+                    <p>Bilingual(English and Chinese)</p>                
+                </div>
+                <div class =skill>
+                    <h3>Algorithm</h3>
+                    <p>Dynamic Programming, DFS, BFS</p>
+                    <p>Binary Search, Hash Table,Sorting</p>
+                    <p>Two Pointers, Stock, Queue</p>
+                    <p>Trees, Linked-List</p>
+                </div>
+            </div>
+            
+            <a href="#work" class="btn">Go My Working Experience</a>
+            
+        </section>
+        
+        
+    <!--About me -->
+        <section class="about-me" id ="about">
+                <h2 class="section--title section__title--about">Who I am？</h2>
+                <p class="section__subtitle section__subtitle--about">Developer/Data Sciencist</p>
+                <!----type about me for this paragraph-->
+                <div class="about-me__body">
+                    <p>Steve(HuaWei) Sun, an Asian American/software Engineer/Data Scientist/Web developer. Having 4 year experience
+                        in java. 
+                        a person who is passionate about making software and do researching in computer science. Always seeking for challenge and carry his work/team to its standard. His goal is making the software, System, graphics are human-friendly, emotive, pleasing, and clear.
+                    </p>
+<!--
+                        <h3>Interests</h3>
+                        <P>My person interests are</P>
+-->
+                </div>
+                <img src="img/aboutme.JPG" alt="Steve on beach" class="about-me__img">
+<!--                <img src="img/aboutme3.jpeg" alt="" class="about-me__img">-->
+        </section>
+        
+    <!---My Work--->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My Working Experience</h2>
+            <p class="section__subtitle section__subtitle--work">Job Experience:</p>
+            <div class="portfolio">
+                <!--work experience-->
+                <a href="https://www.tcs.com/" class="portfolio__item">
+                    <img src="img/TCS_Logo.jpeg" alt="" class="portfolio__img">
+                <p>Software Engineer at Tata Consultancy Services</p>
+                <p>Aug 2021 - Prent</p>
+                <p>San Antonio, Texas, United States</p>
                 </a>
             </div>
-        </div>
-        <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block w-6 h-6 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-        <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block w-6 h-6 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- /Nav Bar -->
-    <!-- Header -->
-    <div class="hero bg-base-200">
-        <div class="text-center hero-content">
-            <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">
-                    Steve(HuaWei) Sun
-                </h1>
-                <p class="mb-5">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.
-                    In deleniti eaque aut repudiandae et a id nisi.
+            <div class="portfolio">
+                <!--school experience-->
+                <a href="https://www.utsa.edu/" class="portfolio__item">
+                    <img src="img/UTSA_LOG.jpeg" alt="" class="portfolio__img">
+                
+                <p> UTSA Laboratory Experience</p>
+                <p>July 2019 - Dec 2019</p>
+                <p>San Antonio, Texas, United States</p>
+                </a>
+            </div>
+          
+        </section>
+        
+        
+        
+    <!-- my project --> 
+        <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--project">My Projects</h2>
+            <div class="project">
+                <!--project-->
+                <p><a href="https://stevesyun.github.io/portfolio/" class="project">Self Portfolio Web</a> (self-hosting)&emsp;&emsp;&emsp;&emsp;&emsp; Aug. 2021 to Current</p>
+                <p>Hua Wei's resume Website</p>
+            </div>
+            <div class="project">
+                <!--work experience-->
+                <a href="" class="project"></a>
+                <p><a href="https://github.com/jacobt98/maze-seeker" class="project">maze-seeke (Machine learning and Neural Network ) </a>&emsp;&emsp;&emsp;&emsp;&emsp;Aug. 2020 to Dec.</p>
+                <p>In this program, we created a maze and represent it through a string in Python, and then place two autonomous agents, a hiding agent '1' and a seeking agent '0', into the maze by replacing a blank space for which they make up.
                 </p>
-                <button class="btn btn-primary">Get Started</button>
             </div>
-        </div>
-    </div>
-    <!-- /Header -->
-
-    <!-- Projects -->
-    <div class="flex justify-center">
-        <div class="max-w-4xl p-4 grid grid-cols-2 gap-8">
-            <div class="">
-                <div class="text-xl font-bold">Project 1</div>
-                <div>
-                    In this program, we created a maze and represent it through a string in Python, and then place two
-                    autonomous agents, a
-                    hiding agent '1' and a seeking agent '0', into the maze by replacing a blank space for which they make
-                    up.
-                </div>
+            <div class="project">
+                <!--work experience-->
+                <p><a href="https://github.com/SteveSyun/Senior-Design-2020-Fall" class="project">Build Microsoft team bot</a>&emsp;&emsp;&emsp;&emsp;&emsp;Aug. 2020 to Dec. 2020</p>
+                <p>because the pandemic by covid-19, all of our fully classes
+                    will be online. Using discord server for handling all students are not enough, so Microsoft teams will be the replacement for discord. soon student will be able to use Microsoft Team for meeting tutor and contact instructors, and TAs.
+                    </p>
             </div>
-            <div class="">
-                <div class="text-xl font-bold">Project 1</div>
-                <div>
-                    In this program, we created a maze and represent it through a string in Python, and then place two
-                    autonomous agents, a
-                    hiding agent '1' and a seeking agent '0', into the maze by replacing a blank space for which they make
-                    up.
-                </div>
+             <div class="project">
+                <!--work experience-->
+                 <p> <a href="https://github.com/SteveSyun/Dungeons-Dragons-Map-Generator" class="project">Dungeons & Dragons: Map-Generator Utility</a>&emsp;&emsp;&emsp;&emsp;&emsp; Aug. 2018 to Dec. 2018</p>
+                <p>This application randomly generates a map grid of hall segments, 
+                    corridors, and rooms, to be used along with the table-top fantasy role-playing, Dungeons & Dragons. This utility can similarly be used with many of the plethora of grid-based storytelling games such as pathfinder, or Vampire.</p>
+            </div>
+            <img src="img/aboutme3.jpeg" alt="sleep tiger" class="my-project_img">;
+          
+        </section>
     
-            </div>
-            <div class="">
-                <div class="text-xl font-bold">Project 1</div>
-                <div>
-                    In this program, we created a maze and represent it through a string in Python, and then place two
-                    autonomous agents, a
-                    hiding agent '1' and a seeking agent '0', into the maze by replacing a blank space for which they make
-                    up.
-                </div>
-    
-            </div>
-            <div class="">
-                <div class="text-xl font-bold">Project 1</div>
-                <div>
-                    In this program, we created a maze and represent it through a string in Python, and then place two
-                    autonomous agents, a
-                    hiding agent '1' and a seeking agent '0', into the maze by replacing a blank space for which they make
-                    up.
-                </div>
-    
-            </div>
-        </div>
-    </div>
-    <!-- /Projects -->
-
+        
+        
     <!---Footer-->
-    <footer class="footer" id=footer>
-        <!--my own email address or contact info-->
-        <ul class="social-list">
-            <li><a href="mailto:sunhuawei1993@gmail.com" class="footer__link"><i class="fas fa-envelope"> -
-                        sunhuawei1993@gmail.com</i></a></li>
-            <li class='social-list__item'><a class="social-list__link"
-                    href="https://www.linkedin.com/in/hua-wei-sun-409247b2"><i class="fab fa-linkedin"> -
-                        Linkedin</i></a></li>
-            <li class='social-list__item'><a class="social-list__link" href="tel:1-210-718-7839"><i
-                        class="fas fa-phone"> 1-210-718-7839</i></a></li>
-            <li class='social-list__item'><a class="social-list__link" href="https://github.com/SteveSyun"><i
-                        class="fab fa-github"> - GitHub</i></a></li>
-
-
-        </ul>
-    </footer>
-
-
-
-    <script src="js/index.js"></script>
-</body>
+        <footer class="footer" id=footer>
+            <!--my own email address or contact info-->
+            <ul class="social-list">
+                <li><a href="mailto:sunhuawei1993@gmail.com" class="footer__link"><i class="fas fa-envelope"> - sunhuawei1993@gmail.com</i></a></li>
+                <li class='social-list__item'><a class="social-list__link" href="https://www.linkedin.com/in/hua-wei-sun-409247b2" ><i class="fab fa-linkedin"> - Linkedin</i></a></li>
+                <li class='social-list__item'><a class="social-list__link" href="tel:1-210-718-7839" ><i class="fas fa-phone"> 1-210-718-7839</i></a></li>
+                <li class='social-list__item'><a class="social-list__link" href="https://github.com/SteveSyun"><i class="fab fa-github"> - GitHub</i></a></li>
+                
+  
+            </ul> 
+        </footer>
+        
+        
+        
+        <script src="js/index.js"></script>
+    </body>
 
 </html>
